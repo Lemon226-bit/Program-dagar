@@ -25,5 +25,12 @@ public class movment : MonoBehaviour
             rb.linearVelocity = new Vector2(5, 0);
         }
 
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+          
+           
+        }
+
+
     }
 }

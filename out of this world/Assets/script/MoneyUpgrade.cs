@@ -1,16 +1,23 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class MoneySystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int money = 0;
 
-    // Update is called once per frame
+    public float moneyInterval = 10f;
+    public int moneyPerInterval = 1;
+
+    private float timer = 0f;
+
     void Update()
     {
-        
+        timer += Time.deltaTime;
+
+        if (timer >= moneyInterval)
+        {
+            money += moneyPerInterval;
+            timer -= moneyInterval;
+        }
     }
 }
+

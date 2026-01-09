@@ -5,8 +5,17 @@ public class playbutten : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    public void start()
+    public void Play()
     {
         SceneManager.LoadSceneAsync("maingame");
     }
+    public void buyui()
+    {
+        SceneManager.LoadSceneAsync("buyui");
+    }
+    public void startui()
+    {
+        SceneManager.LoadSceneAsync("start ui");
+    }
+
 }

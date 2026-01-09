@@ -1,8 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playbutten : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    void
+    public void start()
+    {
+        SceneManager.LoadSceneAsync("maingame");
+    }
 }

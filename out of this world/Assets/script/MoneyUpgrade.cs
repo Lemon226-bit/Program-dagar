@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoneySystem : MonoBehaviour
+public class MoneyUpgrade : MonoBehaviour
 {
     public int money = 0;
 

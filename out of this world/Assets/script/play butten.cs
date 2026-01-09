@@ -1,16 +1,21 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playbutten : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    public void Play()
     {
-        
+        SceneManager.LoadSceneAsync("maingame");
+    }
+    public void buyui()
+    {
+        SceneManager.LoadSceneAsync("buyui");
+    }
+    public void startui()
+    {
+        SceneManager.LoadSceneAsync("start ui");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

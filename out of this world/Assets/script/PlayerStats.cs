@@ -15,6 +15,7 @@ public class PlayerStats : MonoBehaviour
         {
             speedLevel++;
             baseSpeed += speedUpgradeAmount;
+            return;
         }
     }
 
@@ -30,9 +31,17 @@ public class PlayerStats : MonoBehaviour
         {
             fuelLevel++;
             baseFuel += fuelUpgradeAmount;
+           
         }
 
     }
+
+    //Money
+    public float moneyPerInterval = 1f;
+    public int moneyLevel = 0;
+    
+
+
 
 
 

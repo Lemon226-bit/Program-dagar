@@ -15,7 +15,6 @@ public class PlayerStats : MonoBehaviour
         {
             speedLevel++;
             baseSpeed += speedUpgradeAmount;
-            return;
         }
     }
 
@@ -31,7 +30,6 @@ public class PlayerStats : MonoBehaviour
         {
             fuelLevel++;
             baseFuel += fuelUpgradeAmount;
-           
         }
 
     }
@@ -39,25 +37,32 @@ public class PlayerStats : MonoBehaviour
     //Money
     public float moneyPerInterval = 1f;
     public int moneyLevel = 0;
+    public int maxMoneyLevel = 5;
+    public float moneyUpgradeAmount = 1f;
+
+    public void UpgradeMoney()
+    {
+        if (moneyLevel < maxMoneyLevel)
+        {
+            moneyLevel++;
+            moneyPerInterval += moneyUpgradeAmount;
+        }
+    }
+
+    //Health
+    public float baseHealth = 5f;
+    public int healthLevel = 0;
+    public int maxHealthLevel = 5;
+    public float healthUpgradeAmount = 1f;
+
+    public void UpgradeHealth()
+    {
+        if (healthLevel < maxHealthLevel)
+        {
+            healthLevel++;
+            baseHealth += healthUpgradeAmount;
+        }
+
+    }
     
-
-
-
-
-
-
-
-
-
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

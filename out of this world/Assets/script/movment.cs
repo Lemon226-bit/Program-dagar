@@ -26,6 +26,18 @@ public class movment : MonoBehaviour
             rb.linearVelocity = new Vector2(5, 0);
         }
 
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            rb.linearVelocity = new Vector2(0, 5);
+
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            rb.linearVelocity = new Vector2(0, -5);
+
+        }
+
         void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject)

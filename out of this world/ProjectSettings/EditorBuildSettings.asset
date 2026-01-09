@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/start Ui.unity
     guid: c7b1eb5c484a86249b4ec40d83656ac7
   - enabled: 1
-    path: Assets/Scenes/the buy Ui.unity
+    path: Assets/Scenes/buyui.unity
     guid: 411856a17698dcc46b3807571ae391f9
   - enabled: 1
-    path: Assets/Scenes/main game.unity
+    path: Assets/Scenes/maingame.unity
     guid: dc4d2dd3bbb7a0c4e8803d8344922493
   - enabled: 1
     path: Assets/Scenes/end game screen.unity

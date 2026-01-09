@@ -25,6 +25,16 @@ public class movment : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(5, 0);
         }
+        if ((transform.position.x <= -2.5))
+        {
+            transform.position = new Vector2(0, -2.4f);
+
+        }
+        if ((transform.position.x >= 2.5))
+        {
+            transform.position = new Vector2(0, -2.4f);
+
+        }
 
         void OnCollisionEnter2D(Collision2D collision)
         {

@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class movment : MonoBehaviour
 {
     Rigidbody2D rb;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,13 +19,25 @@ public class movment : MonoBehaviour
         rb.linearVelocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            rb.linearVelocity = new Vector2(-5, 0);
+            rb.linearVelocity = new Vector2(-3, 0);
 
         }
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            rb.linearVelocity = new Vector2(5, 0);
+            rb.linearVelocity = new Vector2(3, 0);
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            rb.linearVelocity = new Vector2(0, 3);
+
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            rb.linearVelocity = new Vector2(0, -3);
+
         }
         if ((transform.position.x <= -2.5))
         {

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movment : MonoBehaviour
 {
@@ -27,8 +28,12 @@ public class movment : MonoBehaviour
 
         void OnCollisionEnter2D(Collision2D collision)
         {
-          
-           
+            if (collision.gameObject)
+            {
+                Destroy(gameObject);
+                SceneManager.LoadSceneAsync("gameover");
+            }
+
         }
 
 

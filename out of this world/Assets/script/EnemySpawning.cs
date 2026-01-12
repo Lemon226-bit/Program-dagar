@@ -6,29 +6,42 @@ public class EnemySpawning : MonoBehaviour
     Collider2D enemycollision;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject Asteroid;
-    public GameObject Scrap;
+    public GameObject Scrap1;
+    public GameObject Scrap2;
+    public GameObject Scrap3;
     void Start()
     {
         enemyrigidbody = GetComponent<Rigidbody2D>();
         enemyrigidbody.linearVelocity = new Vector2(0, -3);
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 2; i++)
         {
-            Vector2 spawnlocation = new Vector2(Random.Range(-7, 7), Random.Range(8, 16));
+            Vector2 spawnlocation = new Vector2(Random.Range(-6, 6), Random.Range(8, 16));
             Instantiate(Asteroid, spawnlocation,Quaternion.identity);
         }
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 2; i++)
         {
-            Vector2 spawnlocation = new Vector2(Random.Range(-7, 7), Random.Range(8, 16));
-            Instantiate(Scrap, spawnlocation, Quaternion.identity);
+            Vector2 spawnlocation = new Vector2(Random.Range(-6, 6), Random.Range(8, 16));
+            Instantiate(Scrap1, spawnlocation, Quaternion.identity);
+        }
+
+        for (int i = 0; i < 2; i++)
+        {
+            Vector2 spawnlocation = new Vector2(Random.Range(-6, 6), Random.Range(8, 16));
+            Instantiate(Scrap2, spawnlocation, Quaternion.identity);
+        }
+
+        for (int i = 0; i < 2; i++)
+        {
+            Vector2 spawnlocation = new Vector2(Random.Range(-6, 7), Random.Range(8, 16));
+            Instantiate(Scrap3, spawnlocation, Quaternion.identity);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        enemyrigidbody.linearVelocity = new Vector2(0, -3);
         if (transform.position.y < -6)
         {
             float randomXposition = Random.Range(-8.0f, 8.0f);

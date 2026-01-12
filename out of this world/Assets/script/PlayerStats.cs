@@ -3,6 +3,17 @@ using UnityEngine.Rendering;
 
 public class PlayerStats : MonoBehaviour
 {
+    int money;
+    public void Start()
+    {
+        money = moneyschript.original.money;
+    }
+    public int level1 = 5;
+    public int level2 = 10;
+    public int level3 = 15;
+    public int level4 = 20;
+    public int level5 = 25;
+
     //Playermovement
     public float baseSpeed = 3f;
     public int speedLevel = 0;
@@ -11,6 +22,12 @@ public class PlayerStats : MonoBehaviour
 
     public void UpgradeSpeed()
     {
+       
+      if(money == level1)
+      {
+
+      }
+            
         if (speedLevel < maxSpeedLevel)
         {
             speedLevel++;

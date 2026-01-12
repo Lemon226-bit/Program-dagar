@@ -30,7 +30,7 @@ public class moneyschript : MonoBehaviour
     {
         tid = Time.deltaTime;
 
-        if (tid <= 10)
+        if (tid <= 1000)
         {
             money++;
             tid = 0;

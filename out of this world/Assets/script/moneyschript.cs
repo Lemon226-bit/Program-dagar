@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+
 
 public class moneyschript : MonoBehaviour
 {
@@ -6,9 +8,11 @@ public class moneyschript : MonoBehaviour
     public int moneylevel;
     float tid;
     public int money = 0;
+    public TextMeshProUGUI Mcounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         if (original != null)
         {
             Destroy(gameObject);
@@ -24,12 +28,13 @@ public class moneyschript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tid += Time.deltaTime;
+        tid = Time.deltaTime;
 
-        if (tid < 10)
+        if (tid <= 10)
         {
             money++;
             tid = 0;
+            Mcounter.text = money.ToString("coin");
         }
     }
 

@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 452005542}
   - component: {fileID: 452005541}
   m_Layer: 5
-  m_Name: helth counter
+  m_Name: "hur m\xE5ng avi har "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1243,10 +1243,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   uitext: {fileID: 2138671603}
-  counter2: {fileID: 942833919}
-  counter3: {fileID: 452005541}
-  counter4: {fileID: 1307234130}
-  counter5: {fileID: 2121262959}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counter4: {fileID: 0}
+  counter5: {fileID: 0}
   counter1: {fileID: 0}
   level1: 5
   level2: 10
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 942833920}
   - component: {fileID: 942833919}
   m_Layer: 5
-  m_Name: ' fuel counter'
+  m_Name: "hur m\xE5ng avi har "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,7 +1429,7 @@ GameObject:
   - component: {fileID: 1307234131}
   - component: {fileID: 1307234130}
   m_Layer: 5
-  m_Name: money counter
+  m_Name: "hur m\xE5ng avi har  (1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2194,7 +2194,7 @@ GameObject:
   - component: {fileID: 2121262960}
   - component: {fileID: 2121262959}
   m_Layer: 5
-  m_Name: speed counter
+  m_Name: "hur m\xE5ng avi har  (2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2488,7 +2488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 25}
+  m_AnchoredPosition: {x: 202, y: 71}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2138671603
@@ -2511,7 +2511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "sorry du har inte tilr\xE4kligt mcyket p\xE4ngar "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2576,7 +2576,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 14.556061, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

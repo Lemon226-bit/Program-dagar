@@ -50,16 +50,18 @@ public class movment : MonoBehaviour
 
         }
 
-        void OnCollisionEnter2D(Collision2D collision)
+     
+
+
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject)
         {
-            if (collision.gameObject)
-            {
-                Destroy(gameObject);
-                SceneManager.LoadSceneAsync("gameover");
-            }
-
+            Destroy(gameObject);
+            SceneManager.LoadSceneAsync("gameover");
         }
-
 
     }
 }

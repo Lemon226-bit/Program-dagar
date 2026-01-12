@@ -34,7 +34,7 @@ public class EnemySpawning : MonoBehaviour
 
         for (int i = 0; i < 2; i++)
         {
-            Vector2 spawnlocation = new Vector2(Random.Range(-6, 7), Random.Range(8, 16));
+            Vector2 spawnlocation = new Vector2(Random.Range(-6, 6), Random.Range(8, 16));
             Instantiate(Scrap3, spawnlocation, Quaternion.identity);
         }
     }

@@ -22,17 +22,20 @@ public class PlayerStats : MonoBehaviour
 
     public void UpgradeSpeed()
     {
-       
-      if(money == level1)
-      {
 
-      }
-            
-        if (speedLevel < maxSpeedLevel)
+        if (money == level1)
         {
-            speedLevel++;
-            baseSpeed += speedUpgradeAmount;
+            if (speedLevel < maxSpeedLevel)
+            {
+                speedLevel++;
+                baseSpeed += speedUpgradeAmount;
+            }
         }
+     
+        
+       
+       
+        
     }
 
     //Fuel

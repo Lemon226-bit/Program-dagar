@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-<<<<<<< Updated upstream
+
     TextMeshProUGUI uitext;
     int money;
     public void Start()
@@ -15,9 +15,9 @@ public class PlayerStats : MonoBehaviour
     public int level3 = 15;
     public int level4 = 20;
     public int level5 = 25;
-=======
 
->>>>>>> Stashed changes
+
+
 
     //Playermovement
     public float baseSpeed = 3f;
@@ -28,24 +28,24 @@ public class PlayerStats : MonoBehaviour
     public void UpgradeSpeed()
     {
 
-<<<<<<< Updated upstream
+
         if (money == level1)
-=======
-        if (speedLevel < maxSpeedLevel)
->>>>>>> Stashed changes
-        {
+
             if (speedLevel < maxSpeedLevel)
+
             {
-                speedLevel++;
-                baseSpeed += speedUpgradeAmount;
+                if (speedLevel < maxSpeedLevel)
+                {
+                    speedLevel++;
+                    baseSpeed += speedUpgradeAmount;
 
 
 
+                }
+                uitext.text = "1/5";
             }
-            uitext.text = "1/5";
-        }
-        else
-        { uitext.text = "fattig"; }
+            else
+            { uitext.text = "fattig"; }
         if (money == level2)
         {
             if (speedLevel < maxSpeedLevel)

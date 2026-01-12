@@ -44,8 +44,8 @@ public class PlayerStats : MonoBehaviour
                 }
                 uitext.text = "1/5";
             }
-            else
-            { uitext.text = "fattig"; }
+        if (money != level1)
+        { uitext.text = "fattig"; }
         if (money == level2)
         {
             if (speedLevel < maxSpeedLevel)
@@ -58,7 +58,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "2/5";
         }
-        else
+        if (money != level2)
         { uitext.text = "fattig"; }
 
         if (money == level3)
@@ -73,7 +73,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "3/5";
         }
-        else
+        if (money != level3)
         { uitext.text = "fattig"; }
 
         if (money == level4)
@@ -88,7 +88,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "4/5";
         }
-        else
+        if (money != level4)
         { uitext.text = "fattig"; }
 
         if (money == level5)
@@ -103,7 +103,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "5/5";
         }
-        else
+        if (money != level5)
         { uitext.text = "fattig"; }
 
     }
@@ -125,7 +125,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "1/5";
         }
-        else
+        if (money != level1)
         { uitext.text = "fattig"; }
 
         if (money == level2)
@@ -137,7 +137,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "2/5";
         }
-        else
+        if (money != level2)
         { uitext.text = "fattig"; }
 
         if (money == level3)
@@ -149,8 +149,9 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "3/5";
         }
-        else
+        if (money != level3)
         { uitext.text = "fattig"; }
+
         if (money == level4)
         {
             if (fuelLevel < maxFuelLevel)
@@ -160,7 +161,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "4/5";
         }
-        else
+        if (money != level4)
         { uitext.text = "fattig"; }
 
         if (money == level5)
@@ -172,7 +173,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "5/5";
         }
-        else
+        if (money != level5)
         { uitext.text = "fattig"; }
     }
 
@@ -194,7 +195,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "1/5";
         }
-        else
+        if (money != level1)
         { uitext.text = "fattig"; }
 
         if (money == level2)
@@ -206,8 +207,9 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "2/5";
         }
-        else
+        if (money != level2)
         { uitext.text = "fattig"; }
+
         if (money == level3)
         {
             if (moneyLevel < maxMoneyLevel)
@@ -217,7 +219,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "3/5";
         }
-        else
+        if (money != level3)
         { uitext.text = "fattig"; }
 
         if (money == level4)
@@ -229,7 +231,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "4/5";
         }
-        else
+        if (money != level4)
         { uitext.text = "fattig"; }
 
         if (money == level5)
@@ -241,7 +243,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "5/5";
         }
-        else
+        if (money != level5)
         { uitext.text = "fattig"; }
     }
 
@@ -262,7 +264,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "1/5";
         }
-        else
+        if (money != level1)
         { uitext.text = "fattig"; }
 
         if (money == level2)
@@ -274,7 +276,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "2/5";
         }
-        else
+        if (money != level2)
         { uitext.text = "fattig"; }
 
         if (money == level3)
@@ -286,8 +288,9 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "3/5";
         }
-        else
+        if (money != level3)
         { uitext.text = "fattig"; }
+
         if (money == level4)
         {
             if (healthLevel < maxHealthLevel)
@@ -297,8 +300,9 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "4/5";
         }
-        else
+        if (money != level4)
         { uitext.text = "fattig"; }
+
         if (money == level5)
         {
             if (healthLevel < maxHealthLevel)
@@ -308,7 +312,7 @@ public class PlayerStats : MonoBehaviour
             }
             uitext.text = "5/5";
         }
-        else
+        if (money != level5)
         { uitext.text = "fattig"; }
     }
 

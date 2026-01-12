@@ -28,6 +28,7 @@ public class EnemySpawning : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemyrigidbody.linearVelocity = new Vector2(0, -3);
         if (transform.position.y < -6)
         {
             float randomXposition = Random.Range(-8.0f, 8.0f);

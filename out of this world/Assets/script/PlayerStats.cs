@@ -4,7 +4,13 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
 
-    TextMeshProUGUI uitext;
+    public TextMeshProUGUI uitext;
+    public TextMeshProUGUI uitext2;
+    public TextMeshProUGUI uitext3;
+    public TextMeshProUGUI uitext4;
+    public TextMeshProUGUI uitext5;
+    public TextMeshProUGUI uitext6;
+
     int money;
     public void Start()
     {
@@ -118,6 +124,7 @@ public class PlayerStats : MonoBehaviour
     {
         if (money == level1)
         {
+            uitext.enabled = false;
             if (fuelLevel < maxFuelLevel)
             {
                 fuelLevel++;
@@ -126,7 +133,7 @@ public class PlayerStats : MonoBehaviour
             uitext.text = "1/5";
         }
         if (money != level1)
-        { uitext.text = "fattig"; }
+        { uitext.enabled = true; }
 
         if (money == level2)
         {

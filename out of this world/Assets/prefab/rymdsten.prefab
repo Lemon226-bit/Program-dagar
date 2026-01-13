@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rymdsten
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: dbd702607956c8d4e870ea28eadc47ec, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: dbd702607956c8d4e870ea28eadc47ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.21466

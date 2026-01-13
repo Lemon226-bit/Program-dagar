@@ -29,14 +29,21 @@ public class moneyschript : MonoBehaviour
     void Update()
     {
         tid = Time.deltaTime;
-
-        if (tid <= 20000000000)
+        if ()
         {
-            money++;
-            tid = 0;
-            int hundra = Mathf.RoundToInt(tid / 60);
-            int ental = Mathf.RoundToInt(tid % 60);
-            Mcounter.text = string.Format("{0:00}:{1:00}", hundra, ental);
+
+            if (tid <= 20000000000)
+            {
+                money++;
+                int hundra = Mathf.RoundToInt(tid / 60);
+                int ental = Mathf.RoundToInt(tid % 60);
+                Mcounter.text = string.Format("{0:00}:{1:00}", hundra, ental);
+                tid = 0;
+            }
+        }
+        else ()
+        {
+
         }
     }
 

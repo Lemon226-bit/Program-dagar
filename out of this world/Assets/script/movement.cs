@@ -60,7 +60,8 @@ public class movment : MonoBehaviour
         
         if (collision.gameObject)
         {
-            
+            Destroy(gameObject);
+            SceneManager.LoadSceneAsync("gameover");
         }
 
     }

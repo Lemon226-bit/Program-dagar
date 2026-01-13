@@ -1242,11 +1242,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930725f833ecf934f985bd2fb2ac081b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  money: 0
   uitext: {fileID: 2138671603}
-  counter2: {fileID: 942833919}
-  counter3: {fileID: 452005541}
+  counter2: {fileID: 2121262959}
+  counter3: {fileID: 1584738516}
   counter4: {fileID: 1307234130}
-  counter5: {fileID: 2121262959}
+  counter5: {fileID: 2137457854}
   counter1: {fileID: 0}
   level1: 5
   level2: 10
@@ -2196,6 +2197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930725f833ecf934f985bd2fb2ac081b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  money: 0
   uitext: {fileID: 1584738516}
   counter2: {fileID: 641560929}
   counter3: {fileID: 1517763180}

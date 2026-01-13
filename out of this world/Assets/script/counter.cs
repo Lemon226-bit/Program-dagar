@@ -1,10 +1,11 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class timer1 : MonoBehaviour
+public class counter : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI timerText;
-    float tid;
+    public Text scoreText;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -14,10 +14,7 @@ public class timer1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tid += Time.deltaTime;
-        int minutes = Mathf.RoundToInt(tid / 60);
-        int sek = Mathf.RoundToInt(tid % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, sek);
+
 
     }
 }

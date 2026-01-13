@@ -1,11 +1,11 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class movment : MonoBehaviour
 {
     Rigidbody2D rb;
-
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -49,14 +49,15 @@ public class movment : MonoBehaviour
             transform.position = new Vector2(0, -2.4f);
 
         }
-
+    
      
 
 
     }
-
+    
     void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if (collision.gameObject)
         {
             Destroy(gameObject);

@@ -30,11 +30,13 @@ public class moneyschript : MonoBehaviour
     {
         tid = Time.deltaTime;
 
-        if (tid <= 1000)
+        if (tid <= 20000000000)
         {
             money++;
             tid = 0;
-            Mcounter.text = money.ToString("coin");
+            int hundra = Mathf.RoundToInt(tid / 60);
+            int ental = Mathf.RoundToInt(tid % 60);
+            Mcounter.text = string.Format("{0:00}:{1:00}", hundra, ental);
         }
     }
 

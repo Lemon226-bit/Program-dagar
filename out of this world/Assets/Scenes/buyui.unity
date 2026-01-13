@@ -549,11 +549,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1778859277}
+  m_Father: {fileID: 577679464}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -38, y: -111}
+  m_AnchoredPosition: {x: -33, y: -11}
   m_SizeDelta: {x: 100, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &452005541
@@ -687,6 +687,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2137457853}
+  - {fileID: 452005540}
   m_Father: {fileID: 1778859277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1245,9 +1246,9 @@ MonoBehaviour:
   money: 0
   uitext: {fileID: 2138671603}
   counter2: {fileID: 2121262959}
-  counter3: {fileID: 1584738516}
+  counter3: {fileID: 942833919}
   counter4: {fileID: 1307234130}
-  counter5: {fileID: 2137457854}
+  counter5: {fileID: 452005541}
   counter1: {fileID: 0}
   level1: 5
   level2: 10
@@ -1941,6 +1942,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 641560928}
+  - {fileID: 2121262958}
   m_Father: {fileID: 1778859277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -2138,11 +2140,9 @@ RectTransform:
   m_Children:
   - {fileID: 222929249}
   - {fileID: 1685537912}
-  - {fileID: 452005540}
   - {fileID: 318086971}
   - {fileID: 1307234129}
   - {fileID: 577679464}
-  - {fileID: 2121262958}
   - {fileID: 310779133}
   - {fileID: 2138671602}
   m_Father: {fileID: 0}
@@ -2267,11 +2267,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1778859277}
+  m_Father: {fileID: 1685537912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: 46}
+  m_AnchoredPosition: {x: -27.5, y: -8.999985}
   m_SizeDelta: {x: 100, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2121262959

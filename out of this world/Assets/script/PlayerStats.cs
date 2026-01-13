@@ -250,7 +250,7 @@ public class PlayerStats : MonoBehaviour
     }
 
     //Health
-    public float baseHealth = 5f;
+    public float baseHealth = 3f;
     public int healthLevel = 0;
     public int maxHealthLevel = 5;
     public float healthUpgradeAmount = 1f;

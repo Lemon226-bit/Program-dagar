@@ -1242,6 +1242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930725f833ecf934f985bd2fb2ac081b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  money: 0
   uitext: {fileID: 2138671603}
   counter2: {fileID: 942833919}
   counter3: {fileID: 452005541}
@@ -1553,6 +1554,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307234128}
   m_CullTransparentMesh: 1
+--- !u!1001 &1311272725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2253911629886400664, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_Name
+      value: bakrund till Market
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.1095917
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.5193014
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0055
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.5287
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: -8435245712485981826, guid: 41b9c9d7918c4a842972c902aa0b8c5e, type: 3}
 --- !u!1 &1517763178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,6 +2262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930725f833ecf934f985bd2fb2ac081b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  money: 0
   uitext: {fileID: 1584738516}
   counter2: {fileID: 641560929}
   counter3: {fileID: 1517763180}
@@ -2652,3 +2719,4 @@ SceneRoots:
   - {fileID: 1660622958}
   - {fileID: 896875961}
   - {fileID: 1822426286}
+  - {fileID: 1311272725}

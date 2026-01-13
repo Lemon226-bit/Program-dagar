@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public float money;
 
     public TextMeshProUGUI uitext;
     public TextMeshProUGUI counter2;
@@ -11,10 +12,10 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI counter5;
     public TextMeshProUGUI counter1;
 
-    float money;
+
     public void Start()
     {
-        money = moneyschript.original.money;
+        float money = moneyschript.original.money;
     }
     public int level1 = 5;
     public int level2 = 10;
@@ -35,33 +36,23 @@ public class PlayerStats : MonoBehaviour
     {
 
 
-        if (money == level1)
+        if (money == 5)
 
             if (speedLevel < maxSpeedLevel)
 
             {
-                if (speedLevel < maxSpeedLevel)
-                {
-                    speedLevel++;
-                    baseSpeed += speedUpgradeAmount;
-
-
-
-                }
+                speedLevel++;
+                baseSpeed += speedUpgradeAmount;
+                money -= level1;
                 counter1.text = "1/5";
             }
         if (money != level1)
         { uitext.text = "fattig"; }
         if (money == level2)
         {
-            if (speedLevel < maxSpeedLevel)
-            {
-                speedLevel++;
-                baseSpeed += speedUpgradeAmount;
-
-
-
-            }
+            speedLevel++;
+            baseSpeed += speedUpgradeAmount;
+            money -= level2;
             counter2.text = "2/5";
         }
         if (money != level2)
@@ -73,9 +64,7 @@ public class PlayerStats : MonoBehaviour
             {
                 speedLevel++;
                 baseSpeed += speedUpgradeAmount;
-
-
-
+                money -= level3;
             }
             counter3.text = "3/5";
         }
@@ -88,9 +77,7 @@ public class PlayerStats : MonoBehaviour
             {
                 speedLevel++;
                 baseSpeed += speedUpgradeAmount;
-
-
-
+                money -= level4;
             }
             uitext.text = "4/5";
         }
@@ -103,9 +90,7 @@ public class PlayerStats : MonoBehaviour
             {
                 speedLevel++;
                 baseSpeed += speedUpgradeAmount;
-
-
-
+                money -= level5;
             }
             uitext.text = "5/5";
         }
@@ -129,6 +114,7 @@ public class PlayerStats : MonoBehaviour
             {
                 fuelLevel++;
                 baseFuel += fuelUpgradeAmount;
+                money -= level1;
             }
             counter1.text = "1/5";
         }
@@ -141,6 +127,7 @@ public class PlayerStats : MonoBehaviour
             {
                 fuelLevel++;
                 baseFuel += fuelUpgradeAmount;
+                money -= level2;
             }
             counter2.text = "2/5";
         }
@@ -153,6 +140,7 @@ public class PlayerStats : MonoBehaviour
             {
                 fuelLevel++;
                 baseFuel += fuelUpgradeAmount;
+                money -= level3;
             }
             counter3.text = "3/5";
         }
@@ -165,6 +153,7 @@ public class PlayerStats : MonoBehaviour
             {
                 fuelLevel++;
                 baseFuel += fuelUpgradeAmount;
+                money -= level4;
             }
             uitext.text = "4/5";
         }
@@ -177,6 +166,7 @@ public class PlayerStats : MonoBehaviour
             {
                 fuelLevel++;
                 baseFuel += fuelUpgradeAmount;
+                money -= level5;
             }
             uitext.text = "5/5";
         }
@@ -199,6 +189,7 @@ public class PlayerStats : MonoBehaviour
             {
                 moneyLevel++;
                 moneyPerInterval += moneyUpgradeAmount;
+                money -= level1;
             }
             counter1.text = "1/5";
         }
@@ -211,6 +202,7 @@ public class PlayerStats : MonoBehaviour
             {
                 moneyLevel++;
                 moneyPerInterval += moneyUpgradeAmount;
+                money -= level2;
             }
             counter2.text = "2/5";
         }
@@ -223,6 +215,7 @@ public class PlayerStats : MonoBehaviour
             {
                 moneyLevel++;
                 moneyPerInterval += moneyUpgradeAmount;
+                money -= level3;
             }
             counter3.text = "3/5";
         }
@@ -235,6 +228,7 @@ public class PlayerStats : MonoBehaviour
             {
                 moneyLevel++;
                 moneyPerInterval += moneyUpgradeAmount;
+                money -= level4;
             }
             uitext.text = "4/5";
         }
@@ -247,6 +241,7 @@ public class PlayerStats : MonoBehaviour
             {
                 moneyLevel++;
                 moneyPerInterval += moneyUpgradeAmount;
+                money -= level5;
             }
             uitext.text = "5/5";
         }
@@ -268,6 +263,7 @@ public class PlayerStats : MonoBehaviour
             {
                 healthLevel++;
                 baseHealth += healthUpgradeAmount;
+                money -= level1;
             }
             counter1.text = "1/5";
         }
@@ -280,6 +276,7 @@ public class PlayerStats : MonoBehaviour
             {
                 healthLevel++;
                 baseHealth += healthUpgradeAmount;
+                money -= level2;
             }
             counter2.text = "2/5";
         }
@@ -292,6 +289,7 @@ public class PlayerStats : MonoBehaviour
             {
                 healthLevel++;
                 baseHealth += healthUpgradeAmount;
+                money -= level3;
             }
             counter3.text = "3/5";
         }
@@ -304,10 +302,11 @@ public class PlayerStats : MonoBehaviour
             {
                 healthLevel++;
                 baseHealth += healthUpgradeAmount;
+                money -= level4;
             }
             uitext.text = "4/5";
         }
-        if (money != level4)
+        else if (money != level4)
         { uitext.text = "fattig"; }
 
         if (money == level5)
@@ -316,6 +315,7 @@ public class PlayerStats : MonoBehaviour
             {
                 healthLevel++;
                 baseHealth += healthUpgradeAmount;
+                money -= level5;
             }
             uitext.text = "5/5";
         }

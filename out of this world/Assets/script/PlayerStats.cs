@@ -35,9 +35,6 @@ public class PlayerStats : MonoBehaviour
     public void UpgradeSpeed()
     {
 
-
-
-
         if (speedLevel < maxSpeedLevel)
         {
 

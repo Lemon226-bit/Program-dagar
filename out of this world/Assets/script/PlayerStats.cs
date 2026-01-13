@@ -44,7 +44,7 @@ public class PlayerStats : MonoBehaviour
             baseSpeed += speedUpgradeAmount;
             money -= level1;
 
-            counter1.text = "1/5";
+
         }
         if (money != level1)
         { uitext.text = "fattig"; }
@@ -116,7 +116,7 @@ public class PlayerStats : MonoBehaviour
                 baseFuel += fuelUpgradeAmount;
                 money -= level1;
             }
-            counter3.text = "1/5";
+
         }
         if (money != level1)
         { uitext.enabled = true; }
@@ -191,7 +191,7 @@ public class PlayerStats : MonoBehaviour
                 moneyPerInterval += moneyUpgradeAmount;
                 money -= level1;
             }
-            counter4.text = "1/5";
+
         }
         if (money != level1)
         { uitext.text = "fattig"; }
@@ -265,7 +265,7 @@ public class PlayerStats : MonoBehaviour
                 baseHealth += healthUpgradeAmount;
                 money -= level1;
             }
-            counter1.text = "1/5";
+
         }
         if (money != level1)
         { uitext.text = "fattig"; }

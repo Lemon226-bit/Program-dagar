@@ -336,7 +336,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1822426288}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: playbutten, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
@@ -2152,91 +2152,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1822426285
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1822426286}
-  - component: {fileID: 1822426287}
-  - component: {fileID: 1822426288}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1822426286
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822426285}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.71415, y: -7.15836, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1822426287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822426285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 930725f833ecf934f985bd2fb2ac081b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
-  money: 0
-  uitext: {fileID: 1584738516}
-  counter2: {fileID: 641560929}
-  counter3: {fileID: 1517763180}
-  counter4: {fileID: 0}
-  counter5: {fileID: 0}
-  counter1: {fileID: 0}
-  level1: 5
-  level2: 10
-  level3: 15
-  level4: 20
-  level5: 25
-  baseSpeed: 3
-  speedLevel: 0
-  maxSpeedLevel: 5
-  speedUpgradeAmount: 3
-  baseFuel: 20
-  fuelLevel: 0
-  maxFuelLevel: 5
-  fuelUpgradeAmount: 20
-  moneyPerInterval: 1
-  moneyLevel: 0
-  maxMoneyLevel: 5
-  moneyUpgradeAmount: 1
-  baseHealth: 5
-  healthLevel: 0
-  maxHealthLevel: 5
-  healthUpgradeAmount: 1
---- !u!114 &1822426288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822426285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c93c067f74c9a9943a3c305da9e1bd3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::playbutten
 --- !u!1 &2121262957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,4 +2568,3 @@ SceneRoots:
   - {fileID: 1778859277}
   - {fileID: 1660622958}
   - {fileID: 896875961}
-  - {fileID: 1822426286}

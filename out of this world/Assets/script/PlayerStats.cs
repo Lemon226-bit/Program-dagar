@@ -46,7 +46,6 @@ public class PlayerStats : MonoBehaviour
                     baseSpeed += speedUpgradeAmount;
 
 
-
                 }
                 counter1.text = "1/5";
             }

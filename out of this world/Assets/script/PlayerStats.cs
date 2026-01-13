@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI counter5;
     public TextMeshProUGUI counter1;
 
-    int money;
+    float money;
     public void Start()
     {
         money = moneyschript.original.money;

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class moneyschript : MonoBehaviour
@@ -7,7 +8,7 @@ public class moneyschript : MonoBehaviour
     public static moneyschript original;
     public int moneylevel;
     float tid;
-    public int money = 0;
+    public float money = 0;
     public TextMeshProUGUI Mcounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,20 +30,14 @@ public class moneyschript : MonoBehaviour
     void Update()
     {
         tid = Time.deltaTime;
-        if ()
-        {
 
-            if (tid <= 20000000000)
-            {
-                money++;
-                int hundra = Mathf.RoundToInt(tid / 60);
-                int ental = Mathf.RoundToInt(tid % 60);
-                Mcounter.text = string.Format("{0:00}:{1:00}", hundra, ental);
-                tid = 0;
-            }
-        }
-        else ()
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
+            money += tid;
+            int hundra = Mathf.RoundToInt(tid / 60);
+            int ental = Mathf.RoundToInt(tid % 60);
+            Mcounter.text = string.Format("{0:00}:{1:00}", hundra, ental);
+            tid = 0;
 
         }
     }

@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -50,22 +49,16 @@ public class movment : MonoBehaviour
             transform.position = new Vector2(0, -2.4f);
 
         }
-        
+
 
         if (playerstats.baseHealth <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadSceneAsync("gameover");
         }
-
-
-
     }
-    
     void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        
         if (collision.gameObject)
         {
             playerstats.baseHealth -= 1;

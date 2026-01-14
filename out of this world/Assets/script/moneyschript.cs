@@ -34,12 +34,13 @@ public class moneyschript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             money += tid;
-            int hundra = Mathf.RoundToInt(tid / 60);
-            int ental = Mathf.RoundToInt(tid % 60);
-            Mcounter.text = string.Format("{0:00}:{1:00}", hundra, ental);
             tid = 0;
 
         }
+    }
+    public void Counter()
+    {
+
     }
 
 

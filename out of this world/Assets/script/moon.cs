@@ -28,7 +28,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             {
                 SceneManager.LoadScene("end game screen");
             }
-; 
+ 
 
         }
 

@@ -11,6 +11,11 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI counter4;
     public TextMeshProUGUI counter5;
     public TextMeshProUGUI counter1;
+    public int level1 = 5;
+    public int level2 = 10;
+    public int level3 = 15;
+    public int level4 = 20;
+    public int level5 = 25;
 
 
     public void Update()
@@ -19,15 +24,6 @@ public class PlayerStats : MonoBehaviour
         money = moneyschript.original.money;
 
     }
-    public int level1 = 5;
-    public int level2 = 10;
-    public int level3 = 15;
-    public int level4 = 20;
-    public int level5 = 25;
-
-
-
-
     //Playermovement
     public float baseSpeed = 3f;
     public int speedLevel = 0;

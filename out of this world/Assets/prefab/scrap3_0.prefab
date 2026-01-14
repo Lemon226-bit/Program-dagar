@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -8294685116407414911}
   - component: {fileID: -4040380847967853360}
   - component: {fileID: -2341237567458690119}
+  - component: {fileID: 7736497268920870256}
   m_Layer: 0
   m_Name: scrap3_0
   m_TagString: Scrap
@@ -178,3 +179,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.2466667, y: 1.08}
   m_EdgeRadius: 0
+--- !u!114 &7736497268920870256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5021654653723966780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5cbb2b5ad881142af6de269646642a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyEnemyOnCollision

@@ -20,7 +20,7 @@ public class PlayerStats : MonoBehaviour
 
     public void Update()
     {
-        
+
 
 
         money = moneyschript.original.money;
@@ -39,8 +39,9 @@ public class PlayerStats : MonoBehaviour
         {
 
             speedLevel++;
-            baseSpeed += speedUpgradeAmount;
             money -= level1;
+            baseSpeed += speedUpgradeAmount;
+
 
 
         }
@@ -111,8 +112,9 @@ public class PlayerStats : MonoBehaviour
             if (fuelLevel < maxFuelLevel)
             {
                 fuelLevel++;
-                baseFuel += fuelUpgradeAmount;
                 money -= level1;
+                baseFuel += fuelUpgradeAmount;
+
             }
 
         }
@@ -124,8 +126,9 @@ public class PlayerStats : MonoBehaviour
             if (fuelLevel < maxFuelLevel)
             {
                 fuelLevel++;
-                baseFuel += fuelUpgradeAmount;
                 money -= level2;
+                baseFuel += fuelUpgradeAmount;
+
             }
             counter3.text = "2/5";
         }
@@ -137,8 +140,9 @@ public class PlayerStats : MonoBehaviour
             if (fuelLevel < maxFuelLevel)
             {
                 fuelLevel++;
-                baseFuel += fuelUpgradeAmount;
                 money -= level3;
+                baseFuel += fuelUpgradeAmount;
+
             }
             counter3.text = "3/5";
         }
@@ -150,8 +154,9 @@ public class PlayerStats : MonoBehaviour
             if (fuelLevel < maxFuelLevel)
             {
                 fuelLevel++;
-                baseFuel += fuelUpgradeAmount;
                 money -= level4;
+                baseFuel += fuelUpgradeAmount;
+
             }
             counter3.text = "4/5";
         }
@@ -163,8 +168,9 @@ public class PlayerStats : MonoBehaviour
             if (fuelLevel < maxFuelLevel)
             {
                 fuelLevel++;
-                baseFuel += fuelUpgradeAmount;
                 money -= level5;
+                baseFuel += fuelUpgradeAmount;
+
             }
             counter3.text = "5/5";
         }
@@ -188,8 +194,9 @@ public class PlayerStats : MonoBehaviour
             if (moneyLevel < maxMoneyLevel)
             {
                 moneyLevel++;
-                moneyPerInterval += moneyUpgradeAmount;
                 money -= level1;
+                moneyPerInterval += moneyUpgradeAmount;
+
             }
 
         }
@@ -201,8 +208,9 @@ public class PlayerStats : MonoBehaviour
             if (moneyLevel < maxMoneyLevel)
             {
                 moneyLevel++;
-                moneyPerInterval += moneyUpgradeAmount;
                 money -= level2;
+                moneyPerInterval += moneyUpgradeAmount;
+
             }
             counter4.text = "2/5";
         }
@@ -214,8 +222,9 @@ public class PlayerStats : MonoBehaviour
             if (moneyLevel < maxMoneyLevel)
             {
                 moneyLevel++;
-                moneyPerInterval += moneyUpgradeAmount;
                 money -= level3;
+                moneyPerInterval += moneyUpgradeAmount;
+
             }
             counter4.text = "3/5";
         }
@@ -227,8 +236,9 @@ public class PlayerStats : MonoBehaviour
             if (moneyLevel < maxMoneyLevel)
             {
                 moneyLevel++;
-                moneyPerInterval += moneyUpgradeAmount;
                 money -= level4;
+                moneyPerInterval += moneyUpgradeAmount;
+
             }
             counter4.text = "4/5";
         }
@@ -240,8 +250,9 @@ public class PlayerStats : MonoBehaviour
             if (moneyLevel < maxMoneyLevel)
             {
                 moneyLevel++;
-                moneyPerInterval += moneyUpgradeAmount;
                 money -= level5;
+                moneyPerInterval += moneyUpgradeAmount;
+
             }
             counter4.text = "5/5";
         }
@@ -262,8 +273,9 @@ public class PlayerStats : MonoBehaviour
             if (healthLevel < maxHealthLevel)
             {
                 healthLevel++;
-                baseHealth += healthUpgradeAmount;
                 money -= level1;
+                baseHealth += healthUpgradeAmount;
+
             }
 
         }
@@ -275,8 +287,9 @@ public class PlayerStats : MonoBehaviour
             if (healthLevel < maxHealthLevel)
             {
                 healthLevel++;
-                baseHealth += healthUpgradeAmount;
                 money -= level2;
+                baseHealth += healthUpgradeAmount;
+
             }
             counter2.text = "2/5";
         }
@@ -288,6 +301,7 @@ public class PlayerStats : MonoBehaviour
             if (healthLevel < maxHealthLevel)
             {
                 healthLevel++;
+                money -= level3;
                 baseHealth += healthUpgradeAmount;
                 money -= level3;
             }
@@ -301,8 +315,9 @@ public class PlayerStats : MonoBehaviour
             if (healthLevel < maxHealthLevel)
             {
                 healthLevel++;
-                baseHealth += healthUpgradeAmount;
                 money -= level4;
+                baseHealth += healthUpgradeAmount;
+
             }
             uitext.text = "4/5";
         }
@@ -314,8 +329,9 @@ public class PlayerStats : MonoBehaviour
             if (healthLevel < maxHealthLevel)
             {
                 healthLevel++;
-                baseHealth += healthUpgradeAmount;
                 money -= level5;
+                baseHealth += healthUpgradeAmount;
+
             }
             uitext.text = "5/5";
         }

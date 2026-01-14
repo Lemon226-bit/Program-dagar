@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Moneyschript : MonoBehaviour
 {
+    public PlayerStats moeny;
+
     public static Moneyschript original;
     public PlayerStats playerStats;
+
     public int moneylevel;
     float tid;
     public float money = 0;
@@ -38,7 +41,7 @@ public class Moneyschript : MonoBehaviour
             money += tid;
             tid = 0;
             Mcounter.text = Convert.ToString(money);
+
         }
     }
 }
-

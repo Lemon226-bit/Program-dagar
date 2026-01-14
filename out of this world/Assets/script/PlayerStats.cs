@@ -179,6 +179,8 @@ public class PlayerStats : MonoBehaviour
 
     public void UpgradeMoney()
     {
+        print(money);
+        print(level1);
         if (money >= level1)
         {
             if (moneyLevel < maxMoneyLevel)

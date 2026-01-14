@@ -1,14 +1,16 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class movment : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    public PlayerStats playerstats;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerstats = FindFirstObjectByType<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -48,19 +50,25 @@ public class movment : MonoBehaviour
             transform.position = new Vector2(0, -2.4f);
 
         }
+        
 
-
-
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-
-        if (collision.gameObject)
+        if (playerstats.baseHealth <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadSceneAsync("gameover");
         }
 
+
+
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        
+        if (collision.gameObject)
+        {
+            playerstats.baseHealth -= 1;
+        }
     }
 }

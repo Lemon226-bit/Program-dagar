@@ -5,7 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - bakgrund
-  - Scrap
+  - Enemy
   layers:
   - Default
   - TransparentFX

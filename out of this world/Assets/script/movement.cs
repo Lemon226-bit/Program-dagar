@@ -49,8 +49,26 @@ public class movment : MonoBehaviour
             transform.position = new Vector2(0, -2.4f);
 
         }
-    
-     
+        if ((transform.position.y >= 3))
+        {
+            transform.position = new Vector2(0, -2.4f);
+                
+
+        }
+        if ((transform.position.y >= -5))
+        {
+            transform.position = new Vector2(0, -2.4f);
+
+        }
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject)
+            {
+                Destroy(gameObject);
+                SceneManager.LoadSceneAsync("gameover");
+            }
+
+        }
 
 
     }

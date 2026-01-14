@@ -1,15 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class movment : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
     public PlayerStats playerstats;
+    Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerstats = FindFirstObjectByType<PlayerStats>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -56,6 +58,18 @@ public class movment : MonoBehaviour
             Destroy(gameObject);
             SceneManager.LoadSceneAsync("gameover");
         }
+
+
+
+        if (playerstats.baseHealth == 3)
+        { animator.Play("livbar1"); }
+        if (playerstats.baseHealth == 2)
+        { animator.Play("livbar2"); }
+        if (playerstats.baseHealth == 1)
+        { animator.Play("livbar3"); }
+
+
+
     }
     void OnCollisionEnter2D(Collision2D collision)
     {

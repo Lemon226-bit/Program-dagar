@@ -23,7 +23,7 @@ public class PlayerStats : MonoBehaviour
 
 
 
-        money = moneyschript.original.money;
+        money = Moneyschript.original.money;
 
     }
     //Playermovement

@@ -58,21 +58,6 @@ public class Movement : MonoBehaviour
             Destroy(gameObject);
             SceneManager.LoadSceneAsync("gameover");
         }
-
-<<<<<<< Updated upstream
-
-
-        if (playerstats.baseHealth == 3)
-        { animator.Play("livbar1"); }
-        if (playerstats.baseHealth == 2)
-        { animator.Play("livbar2"); }
-        if (playerstats.baseHealth == 1)
-        { animator.Play("livbar3"); }
-
-
-
-=======
->>>>>>> Stashed changes
     }
     void OnCollisionEnter2D(Collision2D collision)
     {

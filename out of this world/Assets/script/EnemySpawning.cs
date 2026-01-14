@@ -17,7 +17,7 @@ public class EnemySpawning : MonoBehaviour
         for (int i = 0; i < 2; i++)
         {
             Vector2 spawnlocation = new Vector2(Random.Range(-6, 6), Random.Range(8, 16));
-            Instantiate(Asteroid, spawnlocation,Quaternion.identity);
+            Instantiate(Asteroid, spawnlocation, Quaternion.identity);
         }
 
         for (int i = 0; i < 2; i++)

@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -52,13 +51,15 @@ public class Movement : MonoBehaviour
             transform.position = new Vector2(0, -2.4f);
 
         }
-        
+
 
         if (playerstats.baseHealth <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadSceneAsync("gameover");
         }
+
+
 
         if (playerstats.baseHealth == 3)
         { animator.Play("livbar1"); }
@@ -68,12 +69,11 @@ public class Movement : MonoBehaviour
         { animator.Play("livbar3"); }
 
 
+
+
     }
-    
     void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        
         if (collision.gameObject)
         {
             playerstats.baseHealth -= 1;

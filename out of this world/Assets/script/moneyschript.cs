@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -35,13 +36,8 @@ public class moneyschript : MonoBehaviour
         {
             money += tid;
             tid = 0;
+            Mcounter.text = Convert.ToString(money);
 
         }
     }
-    public void Counter()
-    {
-
-    }
-
-
 }

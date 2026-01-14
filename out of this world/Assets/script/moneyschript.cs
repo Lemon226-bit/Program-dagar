@@ -38,7 +38,7 @@ public class moneyschript : MonoBehaviour
 
         }
     }
-    public void counter()
+    public void Counter()
     {
 
     }

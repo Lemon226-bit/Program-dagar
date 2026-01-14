@@ -59,6 +59,7 @@ public class Movement : MonoBehaviour
             SceneManager.LoadSceneAsync("gameover");
         }
 
+<<<<<<< Updated upstream
 
 
         if (playerstats.baseHealth == 3)
@@ -70,6 +71,8 @@ public class Movement : MonoBehaviour
 
 
 
+=======
+>>>>>>> Stashed changes
     }
     void OnCollisionEnter2D(Collision2D collision)
     {

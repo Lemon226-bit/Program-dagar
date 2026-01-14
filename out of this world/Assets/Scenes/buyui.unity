@@ -336,9 +336,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 896875963}
         m_TargetAssemblyTypeName: playbutten, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: startui
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

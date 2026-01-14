@@ -541,6 +541,73 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &602794974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602794976}
+  - component: {fileID: 602794975}
+  m_Layer: 0
+  m_Name: 'fix heath '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &602794975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602794974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930725f833ecf934f985bd2fb2ac081b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  money: 0
+  uitext: {fileID: 0}
+  counter2: {fileID: 0}
+  counter3: {fileID: 0}
+  counter4: {fileID: 0}
+  counter5: {fileID: 0}
+  counter1: {fileID: 0}
+  baseSpeed: 3
+  speedLevel: 0
+  maxSpeedLevel: 5
+  speedUpgradeAmount: 3
+  baseFuel: 20
+  fuelLevel: 0
+  maxFuelLevel: 5
+  fuelUpgradeAmount: 20
+  moneyPerInterval: 1
+  moneyLevel: 0
+  maxMoneyLevel: 5
+  moneyUpgradeAmount: 1
+  baseHealth: 3
+  healthLevel: 0
+  maxHealthLevel: 5
+  healthUpgradeAmount: 1
+--- !u!4 &602794976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602794974}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 164.53104, y: 168.35841, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622924623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,3 +1288,4 @@ SceneRoots:
   - {fileID: 1222231700}
   - {fileID: 312617262}
   - {fileID: 1713549288}
+  - {fileID: 602794976}

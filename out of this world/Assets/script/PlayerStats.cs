@@ -20,6 +20,8 @@ public class PlayerStats : MonoBehaviour
 
     public void Update()
     {
+        
+
 
         money = moneyschript.original.money;
 

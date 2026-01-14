@@ -13,7 +13,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public class TimerToVictory : MonoBehaviour
     {
         float elapsedTime = 0f;
-        float victoryTime = 300f; 
+        float victoryTime = 30f; 
 
         void Update()
         {

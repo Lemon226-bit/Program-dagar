@@ -5,10 +5,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
 
     float elapsedTime = 0f;
-    float victoryTime = 30f;
+    float victoryTime = 180f;
 
 
-
+    void Start()
+    {
+        //if (elapsedTime == 0)
+        //{
+          //  SceneManager.LoadScene("scene till månen");
+        //}
+;
+    }
 
     void Update()
     {
@@ -17,6 +24,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (elapsedTime >= victoryTime)
         {
             SceneManager.LoadScene("scene på månen");
+            if (elapsedTime == 189)
+            {
+                SceneManager.LoadScene("end game screen");
+            }
+; 
 
         }
 
@@ -25,11 +37,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
 
 
-    void Start()
-    {
-
-
-    }
+   
 
 
 

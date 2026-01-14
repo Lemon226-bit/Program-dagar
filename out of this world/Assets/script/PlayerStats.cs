@@ -16,22 +16,32 @@ public class PlayerStats : MonoBehaviour
     int level3 = 15;
     int level4 = 20;
     int level5 = 25;
-
-
-    public void Update()
-    {
-
-
-
-        money = Moneyschript.original.money;
-
-    }
     //Playermovement
     public float baseSpeed = 3f;
     public int speedLevel = 0;
     public int maxSpeedLevel = 5;
     public float speedUpgradeAmount = 3f;
+    //Fuel
+    public float baseFuel = 20f;
+    public int fuelLevel = 0;
+    public int maxFuelLevel = 5;
+    public float fuelUpgradeAmount = 20f;
+    //Money
+    public float moneyPerInterval = 1f;
+    public int moneyLevel = 0;
+    public int maxMoneyLevel = 5;
+    public float moneyUpgradeAmount = 1f;
+    //Health
+    public float baseHealth = 3f;
+    public int healthLevel = 0;
+    public int maxHealthLevel = 5;
+    public float healthUpgradeAmount = 1f;
 
+
+    public void Update()
+    {
+        money = Moneyschript.original.money;
+    }
     public void UpgradeSpeed()
     {
 
@@ -97,13 +107,6 @@ public class PlayerStats : MonoBehaviour
         { uitext.text = "fattig"; }
 
     }
-
-    //Fuel
-    public float baseFuel = 20f;
-    public int fuelLevel = 0;
-    public int maxFuelLevel = 5;
-    public float fuelUpgradeAmount = 20f;
-
     public void UpgradeFuel()
     {
         if (money >= level1)
@@ -177,14 +180,6 @@ public class PlayerStats : MonoBehaviour
         if (money != level5)
         { uitext.text = "fattig"; }
     }
-
-
-    //Money
-    public float moneyPerInterval = 1f;
-    public int moneyLevel = 0;
-    public int maxMoneyLevel = 5;
-    public float moneyUpgradeAmount = 1f;
-
     public void UpgradeMoney()
     {
         print(money);
@@ -259,13 +254,6 @@ public class PlayerStats : MonoBehaviour
         if (money != level5)
         { uitext.text = "fattig"; }
     }
-
-    //Health
-    public float baseHealth = 3f;
-    public int healthLevel = 0;
-    public int maxHealthLevel = 5;
-    public float healthUpgradeAmount = 1f;
-
     public void UpgradeHealth()
     {
         if (money >= level1)

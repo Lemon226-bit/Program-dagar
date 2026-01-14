@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,rb.linearVelocity.y + 3);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y + 3);
 
         }
 

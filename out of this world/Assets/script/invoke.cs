@@ -6,7 +6,7 @@ public class invoke : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Invoke("ChangeToNewGame", 9);
+        Invoke("ChangeToNewGame", 7);
     }
 
     // Update is called once per frame

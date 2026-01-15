@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 public class Moneyschript : MonoBehaviour
@@ -11,8 +10,6 @@ public class Moneyschript : MonoBehaviour
     public static Moneyschript original;
     [SerializeField] PlayerStats playerStats;
     public GameObject fixheath;
-
-    public PlayerStats playerStats;
 
 
     public int moneylevel;
@@ -44,17 +41,9 @@ public class Moneyschript : MonoBehaviour
         tid = 0;
         Mcounter.text = Convert.ToString(money);
 
-        /*
 
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            money += tid;
-            tid = 0;
-            int minutes = Mathf.RoundToInt(tid / 60);
-            int sek = Mathf.RoundToInt(tid % 60);
-            Mcounter.text = Convert.ToString(money);
 
-        }
-        */
+
+
     }
 }

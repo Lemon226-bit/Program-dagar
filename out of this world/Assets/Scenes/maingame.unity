@@ -1377,7 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1aaf0a9dbf088a4dab3d7cfba9ad364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::movment
-  playerstats: {fileID: 0}
+  playerstats: {fileID: 602794975}
 --- !u!114 &1230362567
 MonoBehaviour:
   m_ObjectHideFlags: 0

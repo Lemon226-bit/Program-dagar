@@ -51,6 +51,10 @@ public class Movement : MonoBehaviour
             transform.position = new Vector2(-2.4f, -4.28f);
 
         }
+        if (((transform.position.y >= 5)))
+        {
+            transform.position = new Vector2(-2.4f, -5);
+        }
 
 
         if (playerstats.baseHealth <= 0)

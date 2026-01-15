@@ -16,6 +16,6 @@ public class invoke : MonoBehaviour
     }
     public void ChangeToNewGame()
     {
-        SceneManager.LoadScene("end game scene");
+        SceneManager.LoadScene("end game screen");
     }
 }

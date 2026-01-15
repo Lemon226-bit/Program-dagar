@@ -5,7 +5,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
 
     float elapsedTime = 0f;
-    float victoryTime = 180f;
+    float victoryTime = 30f;
 
 
     void Start()

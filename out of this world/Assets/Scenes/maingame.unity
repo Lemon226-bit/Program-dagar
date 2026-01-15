@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9380972fd80c5dd4998f535ece1f447c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::moneyschript
-  moeny: {fileID: 602794975}
-  playerStats: {fileID: 602794975}
+  moeny: {fileID: 0}
+  playerStats: {fileID: 0}
   moneylevel: 0
   money: 0
   Mcounter: {fileID: 1359038871}
@@ -198,11 +198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ad37f2e564f860e42b5eb29e3f396f9a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -109
+      value: -108.9522
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ad37f2e564f860e42b5eb29e3f396f9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -198.76
+      value: -198.7373
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ad37f2e564f860e42b5eb29e3f396f9a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -851,11 +851,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 0ce5c011f0bd4e742a1617e30706e3a0, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2ee87c86904733a46b18e87c92d81161, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -952,6 +952,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1203252527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203252528}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1203252528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203252527}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1222231700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1027,7 +1058,7 @@ GameObject:
   - component: {fileID: 1230362569}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1330,7 +1361,6 @@ GameObject:
   - component: {fileID: 1359038869}
   - component: {fileID: 1359038872}
   - component: {fileID: 1359038871}
-  - component: {fileID: 1359038873}
   m_Layer: 5
   m_Name: counter
   m_TagString: Untagged
@@ -1456,18 +1486,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359038868}
   m_CullTransparentMesh: 1
---- !u!114 &1359038873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359038868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee39515eb36bda3458cd6a7c4b35da83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::counterstay
 --- !u!1001 &1713549288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1569,8 +1587,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957866090}
+  - component: {fileID: 1957866089}
   - component: {fileID: 1957866091}
-  - component: {fileID: 1957866092}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1578,6 +1596,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1957866089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957866088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7929369aeda14de408d79483cbc74d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawning
+  Asteroid: {fileID: 1063547044288901974, guid: bc7c39d8fcbb4e64b93305720e887046, type: 3}
+  Scrap1: {fileID: 8771138463311979691, guid: 3f5794e75b1f6bc4a9a58156fa66592c, type: 3}
+  Scrap2: {fileID: 6211722582761355312, guid: 87111b9dac8a0114ab8f0c11fd7e5ad6, type: 3}
+  Scrap3: {fileID: 5021654653723966780, guid: 4562f2125c3e03c44aefacdaa4c3334e, type: 3}
 --- !u!4 &1957866090
 Transform:
   m_ObjectHideFlags: 0
@@ -1620,22 +1654,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1957866092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957866088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33d1bcf7450c3244881b0849f20075f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnEnemy
-  asteroid: {fileID: 1063547044288901974, guid: bc7c39d8fcbb4e64b93305720e887046, type: 3}
-  scrap1: {fileID: 8771138463311979691, guid: 3f5794e75b1f6bc4a9a58156fa66592c, type: 3}
-  scrap2: {fileID: 6211722582761355312, guid: 87111b9dac8a0114ab8f0c11fd7e5ad6, type: 3}
-  scrap3: {fileID: 5021654653723966780, guid: 4562f2125c3e03c44aefacdaa4c3334e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1650,4 +1668,5 @@ SceneRoots:
   - {fileID: 312617262}
   - {fileID: 1713549288}
   - {fileID: 602794976}
+  - {fileID: 1203252528}
   - {fileID: 1162515884}

@@ -8,21 +8,14 @@ public class Moneyschript : MonoBehaviour
 {
     public PlayerStats moeny;
     public static Moneyschript original;
-    public PlayerStats playerStats;
-    public GameObject Playermoney;
+    [SerializeField] PlayerStats playerStats;
+    public GameObject fixheath;
 
     public int moneylevel;
     float tid;
     public float money = 0;
     public TextMeshProUGUI Mcounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Awake()
-    {
-        playerStats = Playermoney.GetComponent<PlayerStats>();
-    }
-
-
-
     void Start()
     {
 
@@ -35,7 +28,7 @@ public class Moneyschript : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             original = this;
         }
-
+        Debug.Log(playerStats.moneyPerInterval);
     }
 
     // Update is called once per frame
@@ -48,6 +41,8 @@ public class Moneyschript : MonoBehaviour
 
             money += tid;
             tid = 0;
+            int minutes = Mathf.RoundToInt(tid / 60);
+            int sek = Mathf.RoundToInt(tid % 60);
             Mcounter.text = Convert.ToString(money);
         }
 

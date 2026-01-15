@@ -36,6 +36,12 @@ public class Moneyschript : MonoBehaviour
     {
         tid = Time.deltaTime;
 
+        money += tid;
+        tid = 0;
+        Mcounter.text = Convert.ToString(money);
+
+        /*
+
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             money += tid;
@@ -43,5 +49,6 @@ public class Moneyschript : MonoBehaviour
             Mcounter.text = Convert.ToString(money);
 
         }
+        */
     }
 }

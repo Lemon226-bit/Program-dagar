@@ -1292,6 +1292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::moneyschript
   moeny: {fileID: 0}
   playerStats: {fileID: 0}
+  Playermoney: {fileID: 0}
   moneylevel: 0
   money: 0
   Mcounter: {fileID: 1321192453}

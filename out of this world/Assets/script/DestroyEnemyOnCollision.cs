@@ -16,7 +16,7 @@ public class DestroyEnemyOnCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject)
+        if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

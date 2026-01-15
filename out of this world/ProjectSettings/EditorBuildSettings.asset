@@ -15,17 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/maingame.unity
     guid: dc4d2dd3bbb7a0c4e8803d8344922493
   - enabled: 1
-    path: Assets/Scenes/end game screen.unity
-    guid: b3b105c550464d4499d028998ed59965
-  - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: ceb03e74942823d41be11e07cace0ceb
+  - enabled: 1
+    path: "Assets/Scenes/scene till m\xE5nen.unity"
+    guid: 37fb3d76f802c9b4091260f9dab107b5
   - enabled: 1
     path: "Assets/Scenes/scene p\xE5 m\xE5nen.unity"
     guid: 82bbb9a1009c13442868554b4c65f4d6
   - enabled: 1
-    path: "Assets/Scenes/scene till m\xE5nen.unity"
-    guid: 37fb3d76f802c9b4091260f9dab107b5
+    path: Assets/Scenes/end game screen.unity
+    guid: b3b105c550464d4499d028998ed59965
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

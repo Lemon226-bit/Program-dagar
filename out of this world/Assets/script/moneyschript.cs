@@ -1,6 +1,6 @@
-using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Moneyschript : MonoBehaviour
@@ -29,18 +29,21 @@ public class Moneyschript : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             original = this;
         }
-        Debug.Log(playerStats.moneyPerInterval);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        tid = Time.deltaTime;
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            money += tid;
+            tid = 0;
+            int minutes = Mathf.RoundToInt(tid / 60);
+            int sek = Mathf.RoundToInt(tid % 60);
+            Mcounter.text = string.Format("{0:00}:{1:00}", minutes, sek);
 
-        money += tid;
-        tid = 0;
-        Mcounter.text = Convert.ToString(money);
-
+        }
 
 
 

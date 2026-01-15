@@ -148,9 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9380972fd80c5dd4998f535ece1f447c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::moneyschript
-  moeny: {fileID: 0}
-  playerStats: {fileID: 0}
-  fixheath: {fileID: 0}
+  moeny: {fileID: 602794975}
+  playerStats: {fileID: 602794975}
   moneylevel: 0
   money: 0
   Mcounter: {fileID: 1359038871}

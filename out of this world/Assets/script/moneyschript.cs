@@ -38,11 +38,10 @@ public class Moneyschript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             money += tid;
-            tid = 0;
             int minutes = Mathf.RoundToInt(tid / 60);
             int sek = Mathf.RoundToInt(tid % 60);
             Mcounter.text = string.Format("{0:00}:{1:00}", minutes, sek);
-
+            tid = 0;
         }
 
 

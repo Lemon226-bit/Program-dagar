@@ -7,7 +7,7 @@ public class playbutten : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadSceneAsync("maingame");
+        SceneManager.LoadSceneAsync("scene till månen");
     }
     public void buyui()
     {

@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class Moneyschript : MonoBehaviour
 {
     public PlayerStats moeny;
-    public static Moneyschript original;
+    public static Moneyschript original;    
     public PlayerStats playerStats;
 
     public int moneylevel;
     float tid;
-    public float money = 0;
+    public float money = 0f;
     public TextMeshProUGUI Mcounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

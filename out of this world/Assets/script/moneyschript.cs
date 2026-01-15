@@ -35,7 +35,7 @@ public class Moneyschript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             money += tid;
             int minutes = Mathf.RoundToInt(tid / 60);

@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class Moneyschript : MonoBehaviour
 {
     public PlayerStats moeny;
-
     public static Moneyschript original;
     public PlayerStats playerStats;
 

@@ -1587,8 +1587,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957866090}
-  - component: {fileID: 1957866089}
   - component: {fileID: 1957866091}
+  - component: {fileID: 1957866092}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1596,22 +1596,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1957866089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957866088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7929369aeda14de408d79483cbc74d0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawning
-  Asteroid: {fileID: 1063547044288901974, guid: bc7c39d8fcbb4e64b93305720e887046, type: 3}
-  Scrap1: {fileID: 8771138463311979691, guid: 3f5794e75b1f6bc4a9a58156fa66592c, type: 3}
-  Scrap2: {fileID: 6211722582761355312, guid: 87111b9dac8a0114ab8f0c11fd7e5ad6, type: 3}
-  Scrap3: {fileID: 5021654653723966780, guid: 4562f2125c3e03c44aefacdaa4c3334e, type: 3}
 --- !u!4 &1957866090
 Transform:
   m_ObjectHideFlags: 0
@@ -1654,6 +1638,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1957866092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957866088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33d1bcf7450c3244881b0849f20075f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnEnemy
+  asteroid: {fileID: 1063547044288901974, guid: bc7c39d8fcbb4e64b93305720e887046, type: 3}
+  scrap1: {fileID: 8771138463311979691, guid: 3f5794e75b1f6bc4a9a58156fa66592c, type: 3}
+  scrap2: {fileID: 6211722582761355312, guid: 87111b9dac8a0114ab8f0c11fd7e5ad6, type: 3}
+  scrap3: {fileID: 5021654653723966780, guid: 4562f2125c3e03c44aefacdaa4c3334e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

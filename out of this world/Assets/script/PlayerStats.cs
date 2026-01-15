@@ -26,10 +26,7 @@ public class PlayerStats : MonoBehaviour
     public int maxFuelLevel = 5;
     public float fuelUpgradeAmount = 20f;
     //Money
-    public float moneyPerInterval = 1f;
-    public int moneyLevel = 0;
-    public int maxMoneyLevel = 5;
-    public float moneyUpgradeAmount = 1f;
+
     //Health
     public float baseHealth = 3f;
     public int healthLevel = 0;
@@ -179,6 +176,11 @@ public class PlayerStats : MonoBehaviour
         if (money != level5)
         { fattig.text = "fattig"; }
     }
+
+    public float moneyPerInterval = 0.25f;
+    public int moneyLevel = 0;
+    public int maxMoneyLevel = 5;
+    public float moneyUpgradeAmount = 1f;
     public void UpgradeMoney()
     {
         print(money);

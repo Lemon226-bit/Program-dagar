@@ -180,7 +180,7 @@ public class PlayerStats : MonoBehaviour
     public float moneyPerInterval = 0.25f;
     public int moneyLevel = 0;
     public int maxMoneyLevel = 5;
-    public float moneyUpgradeAmount = 1f;
+    public float moneyUpgradeAmount = 0.25f;
     public void UpgradeMoney()
     {
         print(money);

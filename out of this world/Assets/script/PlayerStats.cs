@@ -5,33 +5,42 @@ public class PlayerStats : MonoBehaviour
 {
     public float money;
 
-    public TextMeshProUGUI uitext;
-    public TextMeshProUGUI counter2;
-    public TextMeshProUGUI counter3;
-    public TextMeshProUGUI counter4;
-    public TextMeshProUGUI counter5;
-    public TextMeshProUGUI counter1;
+    public TextMeshProUGUI fattig;
+    public TextMeshProUGUI speed;
+    public TextMeshProUGUI fuel;
+    public TextMeshProUGUI Money;
+    public TextMeshProUGUI Health;
     int level1 = 5;
     int level2 = 10;
     int level3 = 15;
     int level4 = 20;
     int level5 = 25;
-
-
-    public void Update()
-    {
-
-
-
-        money = Moneyschript.original.money;
-
-    }
     //Playermovement
     public float baseSpeed = 3f;
     public int speedLevel = 0;
     public int maxSpeedLevel = 5;
     public float speedUpgradeAmount = 3f;
+    //Fuel
+    public float baseFuel = 20f;
+    public int fuelLevel = 0;
+    public int maxFuelLevel = 5;
+    public float fuelUpgradeAmount = 20f;
+    //Money
+    public float moneyPerInterval = 1f;
+    public int moneyLevel = 0;
+    public int maxMoneyLevel = 5;
+    public float moneyUpgradeAmount = 1f;
+    //Health
+    public float baseHealth = 3f;
+    public int healthLevel = 0;
+    public int maxHealthLevel = 5;
+    public float healthUpgradeAmount = 1f;
 
+
+    public void Update()
+    {
+        money = Moneyschript.original.money;
+    }
     public void UpgradeSpeed()
     {
 
@@ -46,16 +55,16 @@ public class PlayerStats : MonoBehaviour
 
         }
         if (money != level1)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
         if (money >= level2)
         {
             speedLevel++;
             baseSpeed += speedUpgradeAmount;
             money -= level2;
-            counter1.text = "2/5";
+            speed.text = "2/5";
         }
         if (money != level2)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level3)
         {
@@ -65,10 +74,10 @@ public class PlayerStats : MonoBehaviour
                 baseSpeed += speedUpgradeAmount;
                 money -= level3;
             }
-            counter1.text = "3/5";
+            speed.text = "3/5";
         }
         if (money != level3)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level4)
         {
@@ -78,10 +87,10 @@ public class PlayerStats : MonoBehaviour
                 baseSpeed += speedUpgradeAmount;
                 money -= level4;
             }
-            counter2.text = "4/5";
+            speed.text = "4/5";
         }
         if (money != level4)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level5)
         {
@@ -91,24 +100,17 @@ public class PlayerStats : MonoBehaviour
                 baseSpeed += speedUpgradeAmount;
                 money -= level5;
             }
-            counter2.text = "5/5";
+            speed.text = "5/5";
         }
         if (money != level5)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
     }
-
-    //Fuel
-    public float baseFuel = 20f;
-    public int fuelLevel = 0;
-    public int maxFuelLevel = 5;
-    public float fuelUpgradeAmount = 20f;
-
     public void UpgradeFuel()
     {
         if (money >= level1)
         {
-            uitext.enabled = false;
+            fattig.enabled = false;
             if (fuelLevel < maxFuelLevel)
             {
                 fuelLevel++;
@@ -119,7 +121,7 @@ public class PlayerStats : MonoBehaviour
 
         }
         if (money != level1)
-        { uitext.enabled = true; }
+        { fattig.enabled = true; }
 
         if (money >= level2)
         {
@@ -130,10 +132,10 @@ public class PlayerStats : MonoBehaviour
                 baseFuel += fuelUpgradeAmount;
 
             }
-            counter3.text = "2/5";
+            fuel.text = "2/5";
         }
         if (money != level2)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money == level3)
         {
@@ -144,10 +146,10 @@ public class PlayerStats : MonoBehaviour
                 baseFuel += fuelUpgradeAmount;
 
             }
-            counter3.text = "3/5";
+            fuel.text = "3/5";
         }
         if (money != level3)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money == level4)
         {
@@ -158,10 +160,10 @@ public class PlayerStats : MonoBehaviour
                 baseFuel += fuelUpgradeAmount;
 
             }
-            counter3.text = "4/5";
+            fuel.text = "4/5";
         }
         if (money != level4)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level5)
         {
@@ -172,19 +174,11 @@ public class PlayerStats : MonoBehaviour
                 baseFuel += fuelUpgradeAmount;
 
             }
-            counter3.text = "5/5";
+            fuel.text = "5/5";
         }
         if (money != level5)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
     }
-
-
-    //Money
-    public float moneyPerInterval = 1f;
-    public int moneyLevel = 0;
-    public int maxMoneyLevel = 5;
-    public float moneyUpgradeAmount = 1f;
-
     public void UpgradeMoney()
     {
         print(money);
@@ -201,7 +195,7 @@ public class PlayerStats : MonoBehaviour
 
         }
         if (money != level1)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level2)
         {
@@ -212,10 +206,10 @@ public class PlayerStats : MonoBehaviour
                 moneyPerInterval += moneyUpgradeAmount;
 
             }
-            counter4.text = "2/5";
+            Money.text = "2/5";
         }
         if (money != level2)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level3)
         {
@@ -226,10 +220,10 @@ public class PlayerStats : MonoBehaviour
                 moneyPerInterval += moneyUpgradeAmount;
 
             }
-            counter4.text = "3/5";
+            Money.text = "3/5";
         }
         if (money != level3)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level4)
         {
@@ -240,10 +234,10 @@ public class PlayerStats : MonoBehaviour
                 moneyPerInterval += moneyUpgradeAmount;
 
             }
-            counter4.text = "4/5";
+            Money.text = "4/5";
         }
         if (money != level4)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level5)
         {
@@ -254,18 +248,11 @@ public class PlayerStats : MonoBehaviour
                 moneyPerInterval += moneyUpgradeAmount;
 
             }
-            counter4.text = "5/5";
+            Money.text = "5/5";
         }
         if (money != level5)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
     }
-
-    //Health
-    public float baseHealth = 3f;
-    public int healthLevel = 0;
-    public int maxHealthLevel = 5;
-    public float healthUpgradeAmount = 1f;
-
     public void UpgradeHealth()
     {
         if (money >= level1)
@@ -280,7 +267,7 @@ public class PlayerStats : MonoBehaviour
 
         }
         if (money != level1)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level2)
         {
@@ -291,10 +278,10 @@ public class PlayerStats : MonoBehaviour
                 baseHealth += healthUpgradeAmount;
 
             }
-            counter2.text = "2/5";
+            Health.text = "2/5";
         }
         if (money != level2)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level3)
         {
@@ -305,10 +292,10 @@ public class PlayerStats : MonoBehaviour
                 baseHealth += healthUpgradeAmount;
                 money -= level3;
             }
-            counter3.text = "3/5";
+            Health.text = "3/5";
         }
         if (money != level3)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level4)
         {
@@ -319,10 +306,10 @@ public class PlayerStats : MonoBehaviour
                 baseHealth += healthUpgradeAmount;
 
             }
-            uitext.text = "4/5";
+            Health.text = "4/5";
         }
         else if (money != level4)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
 
         if (money >= level5)
         {
@@ -333,10 +320,10 @@ public class PlayerStats : MonoBehaviour
                 baseHealth += healthUpgradeAmount;
 
             }
-            uitext.text = "5/5";
+            Health.text = "5/5";
         }
         if (money != level5)
-        { uitext.text = "fattig"; }
+        { fattig.text = "fattig"; }
     }
 
 }

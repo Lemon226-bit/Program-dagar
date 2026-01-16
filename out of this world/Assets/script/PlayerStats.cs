@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public static PlayerStats original;
     public float money;
 
     public TextMeshProUGUI fattig;
@@ -34,74 +35,76 @@ public class PlayerStats : MonoBehaviour
     public float healthUpgradeAmount = 1f;
 
 
-    public void Update()
+    public void Start()
     {
         money = Moneyschript.original.money;
+        if (original != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+            original = this;
+        }
     }
     public void UpgradeSpeed()
     {
 
         if (speedLevel < maxSpeedLevel)
         {
-
-            speedLevel++;
-            money -= level1;
-            baseSpeed += speedUpgradeAmount;
-
-
-
-        }
-        if (money != level1)
-        { fattig.text = "fattig"; }
-        if (money >= level2)
-        {
-            speedLevel++;
-            baseSpeed += speedUpgradeAmount;
-            money -= level2;
-            speed.text = "2/5";
-        }
-        if (money != level2)
-        { fattig.text = "fattig"; }
-
-        if (money >= level3)
-        {
-            if (speedLevel < maxSpeedLevel)
+            if (money < level1)
+            { fattig.text = "fattig"; }
+            if (money >= level2)
             {
                 speedLevel++;
                 baseSpeed += speedUpgradeAmount;
-                money -= level3;
+                money -= level2;
+                speed.text = "2/5";
             }
-            speed.text = "3/5";
-        }
-        if (money != level3)
-        { fattig.text = "fattig"; }
+            if (money != level2)
+            { fattig.text = "fattig"; }
 
-        if (money >= level4)
-        {
-            if (speedLevel < maxSpeedLevel)
+            if (money >= level3)
             {
-                speedLevel++;
-                baseSpeed += speedUpgradeAmount;
-                money -= level4;
+                if (speedLevel < maxSpeedLevel)
+                {
+                    speedLevel++;
+                    baseSpeed += speedUpgradeAmount;
+                    money -= level3;
+                }
+                speed.text = "3/5";
             }
-            speed.text = "4/5";
-        }
-        if (money != level4)
-        { fattig.text = "fattig"; }
+            if (money != level3)
+            { fattig.text = "fattig"; }
 
-        if (money >= level5)
-        {
-            if (speedLevel < maxSpeedLevel)
+            if (money >= level4)
             {
-                speedLevel++;
-                baseSpeed += speedUpgradeAmount;
-                money -= level5;
+                if (speedLevel < maxSpeedLevel)
+                {
+                    speedLevel++;
+                    baseSpeed += speedUpgradeAmount;
+                    money -= level4;
+                }
+                speed.text = "4/5";
             }
-            speed.text = "5/5";
-        }
-        if (money != level5)
-        { fattig.text = "fattig"; }
+            if (money != level4)
+            { fattig.text = "fattig"; }
 
+            if (money >= level5)
+            {
+                if (speedLevel < maxSpeedLevel)
+                {
+                    speedLevel++;
+                    baseSpeed += speedUpgradeAmount;
+                    money -= level5;
+                }
+                speed.text = "5/5";
+            }
+            if (money != level5)
+            { fattig.text = "fattig"; }
+
+        }
     }
     public void UpgradeFuel()
     {
@@ -329,3 +332,7 @@ public class PlayerStats : MonoBehaviour
     }
 
 }
+
+
+
+

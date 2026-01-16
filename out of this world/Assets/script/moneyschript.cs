@@ -9,7 +9,9 @@ public class Moneyschript : MonoBehaviour
     public PlayerStats moeny;
 
     public static Moneyschript original;
-    public PlayerStats playerStats;
+    [SerializeField] PlayerStats playerStats;
+
+
 
     public int moneylevel;
     float tid;
@@ -35,20 +37,15 @@ public class Moneyschript : MonoBehaviour
     void Update()
     {
         tid = Time.deltaTime;
-
-        money += tid;
-        tid = 0;
-        Mcounter.text = Convert.ToString(money);
-
-        /*
-
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             money += tid;
-            tid = 0;
             Mcounter.text = Convert.ToString(money);
+            tid = 0;
 
         }
-        */
+
+
+
     }
 }

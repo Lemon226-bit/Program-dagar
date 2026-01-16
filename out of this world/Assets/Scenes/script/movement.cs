@@ -12,6 +12,8 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         playerstats = FindFirstObjectByType<PlayerStats>();
         animator = GetComponent<Animator>();
+
+        playerstats.baseHealth = 3;
     }
 
     // Update is called once per frame

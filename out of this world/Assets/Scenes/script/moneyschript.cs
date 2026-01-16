@@ -17,6 +17,7 @@ public class Moneyschript : MonoBehaviour
     float tid;
     public float money = 0;
     public TextMeshProUGUI Mcounter;
+    public static TextMeshProUGUI testCounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,6 +32,7 @@ public class Moneyschript : MonoBehaviour
             original = this;
         }
 
+        testCounter = Mcounter;
     }
 
     // Update is called once per frame
@@ -40,7 +42,7 @@ public class Moneyschript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             money += tid;
-            Mcounter.text = Convert.ToString(money);
+            testCounter.text = Convert.ToString(money);
             tid = 0;
 
         }

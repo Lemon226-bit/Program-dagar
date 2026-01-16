@@ -19,8 +19,9 @@ public class SpawnEnemy : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-       
-        if (timer > 5) {
+
+        if (timer > 5)
+        {
             Vector2 spawnlocation = new Vector2(Random.Range(-4.5f, 4.5f), Random.Range(8, 16));
             int rand = Random.Range(1, 5);
             if (rand == 1)
@@ -49,7 +50,7 @@ public class SpawnEnemy : MonoBehaviour
             }
         }
 
-        
+
     }
 
 

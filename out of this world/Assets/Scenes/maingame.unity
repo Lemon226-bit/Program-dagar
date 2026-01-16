@@ -371,12 +371,20 @@ PrefabInstance:
       value: rymden (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: -0.059915
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.76
+      value: 0.920033
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
       propertyPath: m_LocalPosition.z

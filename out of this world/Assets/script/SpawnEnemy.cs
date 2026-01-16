@@ -48,19 +48,5 @@ public class SpawnEnemy : MonoBehaviour
         
     }
 
-    public class SelfDestroyInXRange : MonoBehaviour
-    {
-        public float minX;
-        public float maxX;
 
-        void Update()
-        {
-            float x = transform.position.x;
-
-            if (x >= minX && x <= maxX)
-            {
-                Destroy(gameObject);
-            }
-        }
-    }
 }

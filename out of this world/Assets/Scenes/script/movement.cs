@@ -23,24 +23,24 @@ public class Movement : MonoBehaviour
         rb.linearVelocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x + -3, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x + -4, rb.linearVelocity.y);
 
         }
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x + 3, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x + 4, rb.linearVelocity.y);
         }
 
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y + 3);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y + 4);
 
         }
 
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y + -3);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y + -4);
 
         }
         if ((transform.position.x <= -2.5))

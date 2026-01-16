@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public static PlayerStats original;
     public float money;
 
     public TextMeshProUGUI fattig;
@@ -38,15 +37,6 @@ public class PlayerStats : MonoBehaviour
     public void Start()
     {
         money = Moneyschript.original.money;
-        if (original != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-            original = this;
-        }
     }
     public void UpgradeSpeed()
     {
@@ -332,7 +322,3 @@ public class PlayerStats : MonoBehaviour
     }
 
 }
-
-
-
-

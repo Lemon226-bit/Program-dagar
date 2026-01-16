@@ -21,27 +21,31 @@ public class SpawnEnemy : MonoBehaviour
         timer += Time.deltaTime;
        
         if (timer > 5) {
-            Vector2 spawnlocation = new Vector2(Random.Range(-6, 6), Random.Range(8, 16));
+            Vector2 spawnlocation = new Vector2(Random.Range(-4.5f, 4.5f), Random.Range(8, 16));
             int rand = Random.Range(1, 5);
             if (rand == 1)
             {
                 Instantiate(asteroid, spawnlocation, Quaternion.identity);
                 timer = 0;
+                Debug.Log("Spawned asteroid");
             }
             if (rand == 2)
             {
                 Instantiate(scrap1, spawnlocation, Quaternion.identity);
                 timer = 0;
+                Debug.Log("Spawned scrap 1");
             }
             if (rand == 3)
             {
                 Instantiate(scrap2, spawnlocation, Quaternion.identity);
                 timer = 0;
+                Debug.Log("Spawned scrap 2");
             }
             if (rand == 1)
             {
                 Instantiate(scrap3, spawnlocation, Quaternion.identity);
                 timer = 0;
+                Debug.Log("Spawned scrap 3");
             }
         }
 

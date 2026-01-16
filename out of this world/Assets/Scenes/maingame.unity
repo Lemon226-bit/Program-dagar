@@ -198,11 +198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ad37f2e564f860e42b5eb29e3f396f9a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -108.9522
+      value: -95.48
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ad37f2e564f860e42b5eb29e3f396f9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -198.7373
+      value: -174.75
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ad37f2e564f860e42b5eb29e3f396f9a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 462226347}
   - component: {fileID: 462226346}
   m_Layer: 5
-  m_Name: counter (1)
+  m_Name: 'text coin '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1911,7 +1911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1898197529538ed42940d2275b56a7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LivBarAnimator
-  playerstats: {fileID: 0}
+  playerstats: {fileID: 602794975}
 --- !u!1 &1900375739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8771138463311979691, guid: 3f5794e75b1f6bc4a9a58156fa66592c, type: 3}
@@ -1929,7 +1929,6 @@ GameObject:
   - component: {fileID: 1957866091}
   - component: {fileID: 1957866092}
   - component: {fileID: 1957866093}
-  - component: {fileID: 1957866094}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -2008,18 +2007,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHitSound
   scrapSounds: []
---- !u!114 &1957866094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957866088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e5cbb2b5ad881142af6de269646642a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyEnemyOnCollision
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -150,7 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::moneyschript
   moeny: {fileID: 602794975}
   playerStats: {fileID: 602794975}
-  Playermoney: {fileID: 602794974}
   moneylevel: 0
   money: 0
   Mcounter: {fileID: 1359038871}
@@ -258,12 +257,20 @@ PrefabInstance:
       value: rymden (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: -0.059915
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.76
+      value: 0.920033
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f42ec58b82acbb1408b8a4a0d1639631, type: 3}
       propertyPath: m_LocalPosition.z

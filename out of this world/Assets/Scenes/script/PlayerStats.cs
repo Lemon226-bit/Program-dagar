@@ -42,7 +42,11 @@ public class PlayerStats : MonoBehaviour
     public void Start()
     {
         money = Moneyschript.original.money;
-        GameObject.Find("fattig").GetComponent<TextMeshPro>();
+        fattig = GameObject.Find("fattig").GetComponent<TextMeshProUGUI>();
+        speed = GameObject.Find("speed").GetComponent<TextMeshProUGUI>();
+        fuel = GameObject.Find(" fuel").GetComponent<TextMeshProUGUI>();
+        Money = GameObject.Find(" Money").GetComponent<TextMeshProUGUI>();
+        Health = GameObject.Find("Health").GetComponent<TextMeshProUGUI>();
 
     }
     public void UpgradeSpeed()

@@ -19,10 +19,7 @@ public class EnemyMovement : MonoBehaviour
             float randomXposition = Random.Range(-8.0f, 8.0f);
             transform.position = new Vector2(randomXposition, 7);
 
-            if (enemyrigidbody.linearVelocity.y > -10)
-            {
-                enemyrigidbody.linearVelocity += new Vector2(0, -0.5f);
-            }
+
         }
     }
 }

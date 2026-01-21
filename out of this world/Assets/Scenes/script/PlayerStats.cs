@@ -42,6 +42,7 @@ public class PlayerStats : MonoBehaviour
     public void Start()
     {
         money = Moneyschript.original.money;
+        GameObject.Find("fattig").GetComponent<TextMeshPro>();
 
     }
     public void UpgradeSpeed()

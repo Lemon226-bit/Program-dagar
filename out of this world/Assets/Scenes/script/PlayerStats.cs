@@ -42,6 +42,7 @@ public class PlayerStats : MonoBehaviour
     public void Start()
     {
         money = Moneyschript.original.money;
+
     }
     public void UpgradeSpeed()
     {
@@ -175,7 +176,7 @@ public class PlayerStats : MonoBehaviour
         { fattig.text = "fattig"; }
     }
 
-   
+
     public void UpgradeMoney()
     {
         print(money);
